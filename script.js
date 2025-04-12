@@ -1,14 +1,16 @@
-var nama = prompt('Boleh kasih tau nggk nama panggilannya apa... :')
+var nama = prompt('Boleh kasih tau nggk nama panggilannya apa... :').toLocaleLowerCase();
 
-switch (nama) {
+var kapital = nama.charAt(0).toUpperCase() + nama.slice(1);
+
+switch (kapital) {
     case 'Huda' :
-        alert('Halooo ' + nama);
+        alert('Halooo ' + kapital);
 
-        var naleng = prompt('Masukin nama lengkapnya ' + nama + ' yahhh...')
+        var naleng = prompt('Masukin nama lengkapnya ' + kapital + ' yahhh...')
 
         switch (naleng) {
             case 'Siti Huda Muzdalifah':
-                alert('Haii ' + nama + ' Kamu tau nggk, aku tuh bikin sama kirim website ini cuman buat kamuu loh... hhe');
+                alert('Haii ' + kapital + ' Kamu tau nggk, aku tuh bikin sama kirim website ini cuman buat kamuu loh... hhe');
                 alert('jadi lewat program yang aku buat ini ada yang sebenernya pengen aku sampein, bahkan dari dulu sihh pengennya hhe. Tapi yahh karena ada beberapa pertimbangan jadi aku baru pengen bilang sekarang...')
                 alert('Ga kerasa yahh kita kuliah sekarang udah tingkat 3 hhe, yang mana cuman setaun lagi maybe kita udah nggk kuliah yahh...')
                 alert('nah sebelum memang nanti nggak ada kesempatan jadi ada yang aku mau utarain dari sekarang...')
